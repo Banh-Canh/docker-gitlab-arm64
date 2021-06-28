@@ -3,7 +3,7 @@ MAINTAINER GitLab Inc. <support@gitlab.com>
 
 ARG VERSION=14.0.1
 ARG EDITION=ee
-ARG BASE_URL=https://packages.gitlab.com/gitlab/gitlab-$EDITION/packages/ubuntu/focal/
+ARG BASE_URL=https://packages.gitlab.com/gitlab/gitlab-${EDITION}/packages/ubuntu/focal/
 
 SHELL ["/bin/sh", "-c"]
 
@@ -34,9 +34,9 @@ RUN busybox --install \
 RUN rm -rf /etc/update-motd.d /etc/motd /etc/motd.dynamic
 RUN ln -fs /dev/null /run/motd.dynamic
 
-RUN echo "RELEASE_PACKAGE=gitlab-$EDITION" > /RELEASE && \
-    echo "RELEASE_VERSION=$VERSION-$EDITION.0" >> /RELEASE && \
-    echo "DOWNLOAD_URL=$BASE_URL/gitlab-$EDITION_$VERSION-$EDITION.0_arm64.deb/download.deb" >> /RELEASE
+RUN echo "RELEASE_PACKAGE=gitlab-${EDITION}" > /RELEASE && \
+    echo "RELEASE_VERSION=${VERSION}-${EDITION}.0" >> /RELEASE && \
+    echo "DOWNLOAD_URL=$BASE_URL/gitlab-${EDITION}_${VERSION}-${EDITION}.0_arm64.deb/download.deb" >> /RELEASE
 # Copy assets
 COPY assets/ /assets/
 
