@@ -3,7 +3,7 @@ MAINTAINER GitLab Inc. <support@gitlab.com>
 
 ARG VERSION=14.0.1
 ARG EDITION=ee
-ARG BASE_URL=https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/focal/
+ARG BASE_URL=https://packages.gitlab.com/gitlab/gitlab-$EDITION/packages/ubuntu/focal/
 
 SHELL ["/bin/sh", "-c"]
 
