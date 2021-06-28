@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 MAINTAINER GitLab Inc. <support@gitlab.com>
 
 ARG VERSION=14.0.1
-ARG EDITON=ee
+ARG EDITION=ee
 ARG BASE_URL=https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/focal/
 
 SHELL ["/bin/sh", "-c"]
