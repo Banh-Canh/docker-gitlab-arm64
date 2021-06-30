@@ -1,3 +1,3 @@
-The latest docker guide can be found here: [GitLab Docker images](/doc/docker/README.md).
+https://hub.docker.com/r/banhcanh/gitlab-arm64
 
 Gitlab docker image for arm64.
