@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 MAINTAINER GitLab Inc. <support@gitlab.com>
 
-ARG VERSION=14.3.2
+ARG VERSION=14.8.2
 ARG EDITION=ee
 ARG BASE_URL=https://packages.gitlab.com/gitlab/gitlab-${EDITION}/packages/ubuntu/focal/
 
